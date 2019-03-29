@@ -14,8 +14,9 @@ public class MapGenerator : MonoBehaviour
         while (counter < maxroom)
         {
             roomPrefabs = Resources.LoadAll("Rooms");
-            Transform[] roomslist = rooms.GetComponentsInChildren<Transform>();
-            GameObject room = roomslist[Random.Range(1, roomslist.Length)].gameObject;
+            var roomslist = rooms.GetComponentsInChildren<Room>();
+            GameObject room = roomslist[Random.Range(0, roomslist.Length)].gameObject;
+            Debug.Log(room);
             Room script = room.GetComponentInChildren<Room>();
             int index = Random.Range(0, script.has_doors.Length);
             if (script.has_doors[index])
@@ -85,7 +86,7 @@ public class MapGenerator : MonoBehaviour
                             newobj.transform.parent = rooms.transform;
                             script.up_room = newobj;
                             newscript.down_room = room.transform.gameObject;
-                            newobj.transform.position = new Vector2(room.transform.position.x, room.transform.position.y + 5);
+                            newobj.transform.position = new Vector2(room.transform.position.x, room.transform.position.y + 10f);
                         }
                         break;
                     case 3:
@@ -107,7 +108,7 @@ public class MapGenerator : MonoBehaviour
                             newobj.transform.parent = rooms.transform;
                             script.down_room = newobj;
                             newscript.up_room = room.transform.gameObject;
-                            newobj.transform.position = new Vector2(room.transform.position.x, room.transform.position.y - 5);
+                            newobj.transform.position = new Vector2(room.transform.position.x, room.transform.position.y - 10f);
                         }
                         break;
                 }
