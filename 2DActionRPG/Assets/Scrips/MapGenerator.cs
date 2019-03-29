@@ -41,7 +41,7 @@ public class MapGenerator : MonoBehaviour
                             newobj.transform.parent = rooms.transform;
                             script.left_room = newobj;
                             newscript.right_room = room.transform.gameObject;
-                            newobj.transform.position = new Vector2(room.transform.position.x - 5, room.transform.position.y);
+                            newobj.transform.position = new Vector2(room.transform.position.x - 13.5f, room.transform.position.y);
                         }
                         break;
                     case 1:
@@ -63,7 +63,7 @@ public class MapGenerator : MonoBehaviour
                             newobj.transform.parent = rooms.transform;
                             script.right_room = newobj;
                             newscript.left_room = room.transform.gameObject;
-                            newobj.transform.position = new Vector2(room.transform.position.x + 5, room.transform.position.y);
+                            newobj.transform.position = new Vector2(room.transform.position.x + 13.5f, room.transform.position.y);
                         }
                         break;
                     case 2:
