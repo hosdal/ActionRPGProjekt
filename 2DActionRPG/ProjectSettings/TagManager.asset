@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - Room
+  - Bullet
   layers:
   - Default
   - TransparentFX
