@@ -580,7 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rooms: {fileID: 1459164368}
-  maxroom: 5
+  maxroom: 20
 --- !u!1 &1210438847
 GameObject:
   m_ObjectHideFlags: 0

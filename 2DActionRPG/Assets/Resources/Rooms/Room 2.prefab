@@ -1006,7 +1006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055818e9a4453014f9877d56836a8639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  has_doors: 00000101
+  has_doors: 00010101
   left_room: {fileID: 0}
   right_room: {fileID: 0}
   up_room: {fileID: 0}
