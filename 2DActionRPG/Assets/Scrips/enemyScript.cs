@@ -49,6 +49,7 @@ public class enemyScript : MonoBehaviour, IDamageable {
         if (currentHp == 0)
         {
             Destroy(gameObject);
+            room.enemies.RemoveAt(room.enemies.Count - 1);
         }
     }
 }

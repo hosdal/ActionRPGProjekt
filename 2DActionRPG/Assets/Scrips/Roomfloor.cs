@@ -6,7 +6,7 @@ public class Roomfloor: MonoBehaviour {
     private bool firstenter = false;
     public Rigidbody2D enemyPrefab;
     public List<GameObject> enemeyspawns;
-    private List<Rigidbody2D> enemies = new List<Rigidbody2D>();
+    public List<Rigidbody2D> enemies = new List<Rigidbody2D>();
     public bool isIn = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,6 +32,13 @@ public class Roomfloor: MonoBehaviour {
 
     private void Update()
     {
-        
+        if (enemies.Count == 0 && firstenter)
+        {
+            Room script = GetComponentInParent<Room>();
+            foreach (var d in script.doors)
+            {
+                d.SetActive(false);
+            }
+        }
     }
 }
