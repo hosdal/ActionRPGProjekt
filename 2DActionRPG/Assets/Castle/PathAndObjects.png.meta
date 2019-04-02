@@ -5,6 +5,7 @@ TextureImporter:
     21300000: grass
     21300002: biggrass
     21300004: biggrass2
+    21300006: PathAndObjects_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -157,13 +158,33 @@ TextureImporter:
         width: 64
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: a04b4e7b8ca39154fb80f92002bde635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PathAndObjects_0
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 67
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e708fd2e9595b74798c6208f7c4edea
       vertices: []
       indices: 
       edges: []
