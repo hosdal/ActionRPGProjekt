@@ -61,9 +61,6 @@ namespace IndieMarc.TopDown
                 SpriteRenderer render = obj.GetComponent<SpriteRenderer>();
                 if (render.sortingLayerName != layerName)
                 {
-                    Debug.Log(path + " sorting layer changed from "
-                        + render.sortingLayerName
-                        + " to " + layerName);
 
                     render.sortingLayerName = layerName;
                     EditorUtility.SetDirty(obj);
