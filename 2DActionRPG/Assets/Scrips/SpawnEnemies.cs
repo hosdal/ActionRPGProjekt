@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnEnemies : MonoBehaviour
-{
+public class SpawnEnemies : MonoBehaviour {
     private bool firstenter = false;
     public Rigidbody2D enemyPrefab;
     public List<GameObject> enemeyspawns;
@@ -23,6 +22,13 @@ public class SpawnEnemies : MonoBehaviour
 
     private void Update()
     {
-        
+        if (enemies.Count == 0)
+        {
+            var script = GetComponentInParent<Room>();
+            foreach (var d in script.doors)
+            {
+                d.SetActive(false);
+            }
+        }
     }
 }

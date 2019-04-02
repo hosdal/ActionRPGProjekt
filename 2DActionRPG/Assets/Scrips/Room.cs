@@ -12,7 +12,7 @@ public class Room : MonoBehaviour {
     public Object right_room;
     public Object up_room;
     public Object down_room;
-    private List<GameObject> doors = new List<GameObject>();
+    public List<GameObject> doors = new List<GameObject>();
 
     private void Start()
     {
