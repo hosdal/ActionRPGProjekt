@@ -115,9 +115,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 0}
+<<<<<<< HEAD
+  maxHp: 2
+  attackPower: 0
+  speed: 1
+=======
   maxHp: 0
   attackPower: 0
   speed: 0
+>>>>>>> 17bc96149dae903a03c961a98eaeb25a35ac54b6
 --- !u!50 &6248886632713352969
 Rigidbody2D:
   serializedVersion: 4

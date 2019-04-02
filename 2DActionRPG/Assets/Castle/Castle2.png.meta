@@ -21,6 +21,9 @@ TextureImporter:
     21300032: Castle2_8
     21300034: Castle2_9
     21300036: Castle2_10
+    21300038: Castle2_11
+    21300040: Castle2_12
+    21300042: Castle2_13
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -500,6 +503,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1aed39e5766d0a64b89f1cbe1190842e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_11
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 129
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f3b77c8492eee4e959cc355065df9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_12
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 129
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7c3d7f0b8012347b8f512f1c28f6e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_13
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 97
+        width: 30
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650ed4bc175b2064da2f2f2d6b88fea7
       vertices: []
       indices: 
       edges: []
