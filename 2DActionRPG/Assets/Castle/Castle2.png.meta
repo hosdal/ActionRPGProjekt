@@ -11,6 +11,9 @@ TextureImporter:
     21300012: skab
     21300014: skeleton
     21300016: "\xF8kseblok"
+    21300018: Castle2_1
+    21300020: Castle2_2
+    21300022: Castle2_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -290,6 +293,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f3cd1c9490725114a8be043cfaa748fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa365282baaa014daedf0e9e3386f8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 33
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1473b7ff2d247b944b3afb84ff9d7cba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle2_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 260
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef0a3519207242489ee2e7e5211d267
       vertices: []
       indices: 
       edges: []

@@ -26,9 +26,9 @@ public class enemyScript : MonoBehaviour
     {
         if (room.isIn)
         {
-            transform.LookAt(player.gameObject.transform);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.transform.position - transform.position), speed * Time.deltaTime);
 
-            transform.position += transform.forward * speed * Time.deltaTime;
+            //transform.position += transform.forward * speed * Time.deltaTime;
 
         }
     }
