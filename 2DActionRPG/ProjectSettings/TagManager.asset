@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Collider
   - Wall
+  - Enemy
   layers:
   - Default
   - TransparentFX
