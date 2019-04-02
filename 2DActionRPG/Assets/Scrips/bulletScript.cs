@@ -19,11 +19,12 @@ public class bulletScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        //Debug.Log(collision.gameObject.name);
-        if (collision.gameObject.tag == "Enemy")
+        IDamageable entity = collision.collider.GetComponent<IDamageable>();
+
+        if (entity != null)
         {
+            entity.AddDamage(1);
             Destroy(gameObject);
-            Destroy(collision.gameObject);
         }
         else if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Door")
         {
