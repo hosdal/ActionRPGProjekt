@@ -276,6 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289019885594203356}
   - component: {fileID: 7490791136397599656}
+  - component: {fileID: 7979535160754447440}
   m_Layer: 8
   m_Name: Castle2_8
   m_TagString: Wall
@@ -345,6 +346,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &7979535160754447440
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116967133502876237}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02748251, y: -0.07113099}
+  serializedVersion: 2
+  m_Radius: 0.27928424
 --- !u!1 &2186571284950897222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1265,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.85, y: 1.28}
+    oldSize: {x: 0.85, y: 1.25}
     newSize: {x: 0.85, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1354,7 +1371,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.85, y: 1.28}
+    oldSize: {x: 0.85, y: 1.25}
     newSize: {x: 0.85, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
