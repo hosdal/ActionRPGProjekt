@@ -26,7 +26,7 @@ public class gunScript : MonoBehaviour
         //Bullet action
         if(Input.GetButtonDown("Fire1"))
         {
-            animator.SetBool("gunShot", true);
+            animator.SetTrigger("Gunshot");
             Vector2 gunDirection = bulletEntry.TransformDirection(Vector2.right);
 
 
@@ -39,6 +39,6 @@ public class gunScript : MonoBehaviour
             bulletInstance.AddForce(forceToAdd, ForceMode2D.Force);
 
         }
-        animator.SetBool("gunShot", false);
+        
     }
 }
