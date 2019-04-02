@@ -15,6 +15,10 @@ TextureImporter:
     21300020: obj_misk_atlas_1
     21300022: obj_misk_atlas_2
     21300024: obj_misk_atlas_3
+    21300026: biggy
+    21300028: blomst
+    21300030: watermap
+    21300032: onlyWater
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -374,6 +378,86 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f394413cf5321124d8e3111ba9b0550c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biggy
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e12dfbc65aad443ae17fed1fc356ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blomst
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 12
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1c165746c06ad439fd7fd81571fee6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: watermap
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 675
+        width: 223
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ae86946a445aa42bd5f84b27f37250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: onlyWater
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 865
+        width: 110
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b459a3e576ab214bad1b85a72533e5c
       vertices: []
       indices: 
       edges: []
