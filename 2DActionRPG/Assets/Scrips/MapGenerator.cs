@@ -11,6 +11,7 @@ public class MapGenerator : MonoBehaviour {
 
     void Awake()
     {
+        positions.Add(new Vector2(0, 0));
         while (counter < maxroom)
         {
             roomPrefabs = Resources.LoadAll("Rooms");
@@ -125,7 +126,7 @@ public class MapGenerator : MonoBehaviour {
         }
     }
 
-    bool isPosInArray(Vector2 val, List<Vector2> arr)
+    private bool isPosInArray(Vector2 val, List<Vector2> arr)
     {
         for (int i = 0; i < arr.Count; i++)
         {
@@ -133,10 +134,5 @@ public class MapGenerator : MonoBehaviour {
                 return true;
         }
         return false;
-    }
-
-    void Update()
-    {
-
     }
 }
