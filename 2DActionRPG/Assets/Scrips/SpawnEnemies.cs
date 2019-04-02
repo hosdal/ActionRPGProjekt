@@ -6,7 +6,7 @@ public class SpawnEnemies : MonoBehaviour {
     private bool firstenter = false;
     public Rigidbody2D enemyPrefab;
     public List<GameObject> enemeyspawns;
-    private List<Rigidbody2D> enemies;
+    private List<Rigidbody2D> enemies = new List<Rigidbody2D>();
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,20 +15,13 @@ public class SpawnEnemies : MonoBehaviour {
             firstenter = true;
             foreach (var spawn in enemeyspawns)
             {
-                Instantiate(enemyPrefab, spawn.transform);
+                enemies.Add(Instantiate(enemyPrefab, spawn.transform));
             }
         }
     }
 
     private void Update()
     {
-        if (enemies.Count == 0)
-        {
-            var script = GetComponentInParent<Room>();
-            foreach (var d in script.doors)
-            {
-                d.SetActive(false);
-            }
-        }
+        
     }
 }
