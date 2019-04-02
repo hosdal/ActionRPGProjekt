@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 4e968b4c8b2b95f4d857a01857102aeb
+guid: 6f7fac287b074074fa5a5475a331a801
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Castle2_0
-    21300002: box1
-    21300004: anvil
-    21300006: fruitBox
-    21300008: "bannerR\xF8d"
-    21300010: "bannerBl\xE5"
-    21300012: skab
-    21300014: skeleton
-    21300016: "\xF8kseblok"
+    21300000: RipStone
+    21300002: bigRip
+    21300004: "ildt\xF8nde"
+    21300006: Retro1
+    21300008: Retro2
+    21300010: RetroPc
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -115,113 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Castle2_0
+      name: RipStone
       rect:
         serializedVersion: 2
-        x: 227
-        y: 3
-        width: 60
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d852664f26025d3499e28f7d44a17401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: box1
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 2
-        width: 28
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ad277e63efc77c4a9737ee32a71e70d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anvil
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 194
-        width: 27
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c56e983bc65a1a145b6b02941d77ca2f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fruitBox
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 227
-        width: 25
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccabcf386bfdd8d4293ea3f232050115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "bannerR\xF8d"
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 203
-        width: 30
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4840d38a8e0f6e04eb26759f870b1766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "bannerBl\xE5"
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 203
+        x: 738
+        y: 195
         width: 29
-        height: 49
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed92338cf3af9d4ea7c43f13ec9595b
+      spriteID: 53d35eded05549f45b09c40153f019a6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skab
+      name: bigRip
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 61
+        x: 642
+        y: 129
+        width: 63
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8dc1a8b7513f8642a03a6a3c259de69
+      spriteID: f5dea7b3aea976c4d8e834d571817409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skeleton
+      name: "ildt\xF8nde"
       rect:
         serializedVersion: 2
-        x: 32
-        y: 130
-        width: 32
-        height: 29
+        x: 645
+        y: 390
+        width: 23
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a17d8c6041dc1434591bca076b43605e
+      spriteID: edfaceb4896ca534395a7290efbf0641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xF8kseblok"
+      name: Retro1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 226
-        width: 32
-        height: 30
+        x: 650
+        y: 513
+        width: 44
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,7 +186,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3cd1c9490725114a8be043cfaa748fc
+      spriteID: b2b6c670291cba44786f822b7d28fde8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Retro2
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 512
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8d1cb0bc168764abc2d01d8b9c6e85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RetroPc
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac62211ca60bab44b872c4e41df323d
       vertices: []
       indices: 
       edges: []
@@ -297,7 +234,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 41bb63719e1218742b34d0b8153373d4
+    spriteID: a656505a2b2b8304996ab1589bf30a78
     vertices: []
     indices: 
     edges: []
