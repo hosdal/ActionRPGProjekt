@@ -189,6 +189,16 @@ PrefabInstance:
       propertyPath: runSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1424613734977562537, guid: 8fda200a33892f2418de1175ae6bb6be,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424613734977562537, guid: 8fda200a33892f2418de1175ae6bb6be,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fda200a33892f2418de1175ae6bb6be, type: 3}
 --- !u!1 &164349029
