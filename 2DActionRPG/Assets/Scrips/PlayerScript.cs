@@ -37,8 +37,7 @@ public class PlayerScript : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
         Vector2 targetVelocity = new Vector2(horizontal, vertical);
-        rb2D.MovePosition(rb2D.position + targetVelocity * runSpeed * Time.fixedDeltaTime);
-
+        transform.Translate(targetVelocity * runSpeed*Time.deltaTime, Space.World);
 
     }
 
