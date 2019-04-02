@@ -8,15 +8,14 @@ public class MapGenerator : MonoBehaviour {
     private int counter = 0;
     private Object[] roomPrefabs;
     private List<Vector2> positions = new List<Vector2>();
-    private List<GameObject> createdRooms = new List<GameObject>();
-
+    Room[] roomslist;
     void Awake()
     {
         positions.Add(new Vector2(0, 0));
         while (counter < maxroom)
         {
             roomPrefabs = Resources.LoadAll("Rooms");
-            var roomslist = rooms.GetComponentsInChildren<Room>();
+            roomslist = rooms.GetComponentsInChildren<Room>();
             GameObject room = roomslist[Random.Range(0, roomslist.Length)].gameObject;
             Room script = room.GetComponentInChildren<Room>();
             int index = Random.Range(0, script.has_doors.Length);
@@ -45,7 +44,6 @@ public class MapGenerator : MonoBehaviour {
                             newobj.transform.parent = rooms.transform;
                             newobj.transform.position = pos;
                             positions.Add(pos);
-                            createdRooms.Add(newobj);
                         }
                         break;
                     case 1:
@@ -68,7 +66,6 @@ public class MapGenerator : MonoBehaviour {
                             newobj.transform.parent = rooms.transform;
                             newobj.transform.position = pos;
                             positions.Add(pos);
-                            createdRooms.Add(newobj);
                         }
                         break;
                     case 2:
@@ -91,7 +88,6 @@ public class MapGenerator : MonoBehaviour {
                             newobj.transform.parent = rooms.transform;
                             newobj.transform.position = pos;
                             positions.Add(pos);
-                            createdRooms.Add(newobj);
 
                         }
                         break;
@@ -115,11 +111,6 @@ public class MapGenerator : MonoBehaviour {
                             newobj.transform.parent = rooms.transform;
                             newobj.transform.position = pos;
                             positions.Add(pos);
-                            createdRooms.Add(newobj);
-                            foreach (var g in createdRooms)
-                            {
-                                checkNeigbour(newobj, g);
-                            }
                         }
                         break;
                 }
@@ -127,18 +118,13 @@ public class MapGenerator : MonoBehaviour {
 
         }
 
-        foreach (var g in createdRooms)
+        foreach (var g in roomslist)
         {
-            foreach (var g2 in createdRooms)
+            foreach (var g2 in roomslist)
             {
-                checkNeigbour(g, g2);
+                checkNeigbour(g.gameObject, g2.gameObject);
             }
         }
-    }
-
-    private void createRoom()
-    {
-
     }
 
     private bool isPosInArray(Vector2 val, List<Vector2> arr)
