@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyScript : MonoBehaviour
-{
+public class enemyScript : MonoBehaviour, IDamageable {
     public Roomfloor room;
     [SerializeField]
     private int maxHp;
@@ -20,6 +19,7 @@ public class enemyScript : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerScript>();
+        currentHp = maxHp;
     }
 
     private void FixedUpdate()
@@ -42,5 +42,13 @@ public class enemyScript : MonoBehaviour
 
         }
     }
+
+    public void AddDamage(int damage)
+    {
+        currentHp -= damage;
+        if (currentHp == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
-    
