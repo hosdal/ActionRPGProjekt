@@ -12,12 +12,25 @@ public class enemyScript : MonoBehaviour
     private int attackPower;
     [SerializeField]
     private float speed;
+
+    private PlayerScript player;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = FindObjectOfType<PlayerScript>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (room.isIn)
+        {
+            transform.LookAt(player.gameObject.transform);
+
+            transform.position += transform.forward * speed * Time.deltaTime;
+
+        }
     }
 
     // Update is called once per frame
