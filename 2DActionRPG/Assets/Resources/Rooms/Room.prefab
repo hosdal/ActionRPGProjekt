@@ -146,6 +146,7 @@ Transform:
   - {fileID: 7432813177160393508}
   - {fileID: 6954471792866872474}
   - {fileID: 6338314157386016810}
+  - {fileID: 588943258767826010}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -179,7 +180,7 @@ GameObject:
   - component: {fileID: 4939340960079809469}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,6 +273,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.29, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1 &1798808844291520108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 588943258767826010}
+  m_Layer: 0
+  m_Name: EnemyEmpty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &588943258767826010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798808844291520108}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.16749978, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6858764621000816870}
+  - {fileID: 52375480295295425}
+  m_Father: {fileID: 3867512631228501958}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2928519756441246635
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +318,7 @@ GameObject:
   - component: {fileID: 6980017540940325404}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -391,7 +424,7 @@ GameObject:
   - component: {fileID: 6824675085043501429}
   m_Layer: 0
   m_Name: Retro2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,6 +517,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46, y: 0.62}
   m_EdgeRadius: 0
+--- !u!1 &3338325653839654414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6858764621000816870}
+  m_Layer: 0
+  m_Name: Empty1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6858764621000816870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3338325653839654414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.5, y: 2.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 588943258767826010}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4174015231412781528
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +560,7 @@ GameObject:
   - component: {fileID: 2853879689547748752}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -603,7 +666,7 @@ GameObject:
   - component: {fileID: 4534348604966629453}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +772,7 @@ GameObject:
   - component: {fileID: 4744039748727232790}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -815,7 +878,7 @@ GameObject:
   - component: {fileID: 3068407791806903136}
   m_Layer: 0
   m_Name: RetroPc
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -921,7 +984,7 @@ GameObject:
   - component: {fileID: 8714723501263906752}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1014,6 +1077,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.29, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1 &7995127857479383651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52375480295295425}
+  m_Layer: 0
+  m_Name: Empty2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &52375480295295425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995127857479383651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.04, y: -2.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 588943258767826010}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8659054157770512034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1226,7 @@ GameObject:
   - component: {fileID: 8676448434323717363}
   m_Layer: 0
   m_Name: Retro1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,6 +1386,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor_simple
       objectReference: {fileID: 0}
+    - target: {fileID: 6848175769848879969, guid: 082009ddc17db4147b1c73bdd1ba730b,
+        type: 3}
+      propertyPath: enemeyspawns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848175769848879969, guid: 082009ddc17db4147b1c73bdd1ba730b,
+        type: 3}
+      propertyPath: enemeyspawns.Array.data[0]
+      value: 
+      objectReference: {fileID: 3338325653839654414}
+    - target: {fileID: 6848175769848879969, guid: 082009ddc17db4147b1c73bdd1ba730b,
+        type: 3}
+      propertyPath: enemeyspawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 7995127857479383651}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 082009ddc17db4147b1c73bdd1ba730b, type: 3}
 --- !u!4 &5487546896279794052 stripped
