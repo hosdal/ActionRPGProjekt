@@ -114,6 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e247122510fc34bbb88333d05bc9bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  maxHp: 2
+  attackPower: 0
+  speed: 1
 --- !u!50 &6248886632713352969
 Rigidbody2D:
   serializedVersion: 4
