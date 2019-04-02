@@ -19,6 +19,13 @@ public class bulletScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        Debug.Log(collision.gameObject.name);
+     if(collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("hit");
+        } else if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Door")
+        {
+            Destroy(gameObject);
+        }
     }
 }
