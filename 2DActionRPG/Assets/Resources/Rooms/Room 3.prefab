@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138705121744925367}
   - component: {fileID: 5628978190707637189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 2804880997944304717}
   - component: {fileID: 3048903053937939416}
   - component: {fileID: 5410597355704385053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 6570835109849210248}
   - component: {fileID: 7087167106466185498}
   - component: {fileID: 7341879013476251353}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 2003483657536308695}
   - component: {fileID: 2003483657536308692}
   - component: {fileID: 1741692673573740063}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 5285026325418196583}
   - component: {fileID: 3294594834232070241}
   - component: {fileID: 8467272827314584119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 8634321403830409329}
   - component: {fileID: 8545583878326091714}
   - component: {fileID: 2665098139559386845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 2976936185286512463}
   - component: {fileID: 4524603466276004041}
   - component: {fileID: 733834284223374855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 7169547750208462675}
   - component: {fileID: 7286659893900581873}
   - component: {fileID: 6073292539786902502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 7138711614205794747}
   - component: {fileID: 5830580029445543700}
   - component: {fileID: 7214256736896301086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1088,7 +1088,7 @@ GameObject:
   - component: {fileID: 7705969695555604458}
   - component: {fileID: 7705969695555604457}
   - component: {fileID: 7572639064386933794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -1194,7 +1194,7 @@ GameObject:
   - component: {fileID: 6547274741181165095}
   - component: {fileID: 7092585088407500122}
   - component: {fileID: 3990118320516703691}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 3484141028157496017}
   - component: {fileID: 1881878939360509428}
   - component: {fileID: 1926470193545034388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fruitBox
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1492,6 +1492,7 @@ MonoBehaviour:
   right_room: {fileID: 0}
   up_room: {fileID: 0}
   down_room: {fileID: 0}
+  doors: []
 --- !u!1001 &6893557190566119436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1499,6 +1500,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6871702084050963421}
     m_Modifications:
+    - target: {fileID: 3152760018117206317, guid: 082009ddc17db4147b1c73bdd1ba730b,
+        type: 3}
+      propertyPath: m_Name
+      value: floor_simple
+      objectReference: {fileID: 0}
     - target: {fileID: 3152760018117206322, guid: 082009ddc17db4147b1c73bdd1ba730b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1553,11 +1559,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3152760018117206317, guid: 082009ddc17db4147b1c73bdd1ba730b,
-        type: 3}
-      propertyPath: m_Name
-      value: floor_simple
       objectReference: {fileID: 0}
     - target: {fileID: 6848175769848879969, guid: 082009ddc17db4147b1c73bdd1ba730b,
         type: 3}

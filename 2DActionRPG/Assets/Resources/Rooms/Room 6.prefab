@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7189306824697263383}
   - component: {fileID: 514927192552102673}
   - component: {fileID: 6853467907198529863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 8191459146315765496}
   - component: {fileID: 5244177786322324074}
   - component: {fileID: 5728080742514769321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 3130393806011021767}
   - component: {fileID: 7242780858920218805}
   - component: {fileID: 2608027155271532511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 3553461893831855783}
   - component: {fileID: 3553461893831855780}
   - component: {fileID: 3654142525721007471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 896589534476250941}
   - component: {fileID: 59182493348108456}
   - component: {fileID: 7028974042741863789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -696,7 +696,7 @@ GameObject:
   - component: {fileID: 4642289388229280922}
   - component: {fileID: 4642289388229280921}
   - component: {fileID: 4866922378459553618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 8088804363407009111}
   - component: {fileID: 5255788215872159274}
   - component: {fileID: 2144307702930714299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -991,6 +991,7 @@ MonoBehaviour:
   right_room: {fileID: 0}
   up_room: {fileID: 0}
   down_room: {fileID: 0}
+  doors: []
 --- !u!1 &6154424360536978848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,7 +1003,7 @@ GameObject:
   - component: {fileID: 5433425484450770511}
   - component: {fileID: 6378853482041802740}
   - component: {fileID: 1114602737124824767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1108,7 +1109,7 @@ GameObject:
   - component: {fileID: 8655469416153735937}
   - component: {fileID: 3974401906058215443}
   - component: {fileID: 7355927233251342064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: anvil
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1214,7 +1215,7 @@ GameObject:
   - component: {fileID: 5324093373846180899}
   - component: {fileID: 5729363327813619841}
   - component: {fileID: 9139220250237841558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1320,7 +1321,7 @@ GameObject:
   - component: {fileID: 274034265232950335}
   - component: {fileID: 1465708266827639737}
   - component: {fileID: 2356149388903951735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1426,7 +1427,7 @@ GameObject:
   - component: {fileID: 3323517364952188074}
   - component: {fileID: 313106061533864847}
   - component: {fileID: 358481259057472751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fruitBox
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1532,7 +1533,7 @@ GameObject:
   - component: {fileID: 5299733343352230603}
   - component: {fileID: 8824736001699748964}
   - component: {fileID: 5657527468338230126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1638,7 +1639,7 @@ GameObject:
   - component: {fileID: 1737587073695423782}
   - component: {fileID: 2951927773853912529}
   - component: {fileID: 7670180257438679051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InnerWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1740,6 +1741,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8484944035957948589}
     m_Modifications:
+    - target: {fileID: 3152760018117206317, guid: 082009ddc17db4147b1c73bdd1ba730b,
+        type: 3}
+      propertyPath: m_Name
+      value: floor_simple
+      objectReference: {fileID: 0}
     - target: {fileID: 3152760018117206322, guid: 082009ddc17db4147b1c73bdd1ba730b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1794,11 +1800,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3152760018117206317, guid: 082009ddc17db4147b1c73bdd1ba730b,
-        type: 3}
-      propertyPath: m_Name
-      value: floor_simple
       objectReference: {fileID: 0}
     - target: {fileID: 6848175769848879969, guid: 082009ddc17db4147b1c73bdd1ba730b,
         type: 3}

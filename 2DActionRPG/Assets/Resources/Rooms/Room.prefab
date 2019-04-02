@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1327041521}
   - component: {fileID: 1327041522}
   - component: {fileID: 281036855612985401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -167,6 +167,7 @@ MonoBehaviour:
   right_room: {fileID: 0}
   up_room: {fileID: 0}
   down_room: {fileID: 0}
+  doors: []
 --- !u!1 &1743169284989580217
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +179,7 @@ GameObject:
   - component: {fileID: 2958645766069452881}
   - component: {fileID: 1278533670406708012}
   - component: {fileID: 4939340960079809469}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -316,7 +317,7 @@ GameObject:
   - component: {fileID: 4873221542317591380}
   - component: {fileID: 6069590595930465490}
   - component: {fileID: 6980017540940325404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -422,7 +423,7 @@ GameObject:
   - component: {fileID: 6954471792866872474}
   - component: {fileID: 4163534311149379678}
   - component: {fileID: 6824675085043501429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Retro2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -558,7 +559,7 @@ GameObject:
   - component: {fileID: 1201606398917832997}
   - component: {fileID: 1642905147882517895}
   - component: {fileID: 2853879689547748752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -664,7 +665,7 @@ GameObject:
   - component: {fileID: 8109763574887263471}
   - component: {fileID: 6426355704239774865}
   - component: {fileID: 4534348604966629453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -770,7 +771,7 @@ GameObject:
   - component: {fileID: 1329231040155901510}
   - component: {fileID: 1840934032676850006}
   - component: {fileID: 4744039748727232790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -876,7 +877,7 @@ GameObject:
   - component: {fileID: 6338314157386016810}
   - component: {fileID: 5911019712689558005}
   - component: {fileID: 3068407791806903136}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RetroPc
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -982,7 +983,7 @@ GameObject:
   - component: {fileID: 859797397056469013}
   - component: {fileID: 6177941671817778459}
   - component: {fileID: 8714723501263906752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1118,7 +1119,7 @@ GameObject:
   - component: {fileID: 5484798256530317398}
   - component: {fileID: 4665442997369722819}
   - component: {fileID: 2443017240764758534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -1224,7 +1225,7 @@ GameObject:
   - component: {fileID: 7432813177160393508}
   - component: {fileID: 3101202520126288621}
   - component: {fileID: 8676448434323717363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Retro1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1326,6 +1327,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3867512631228501958}
     m_Modifications:
+    - target: {fileID: 3152760018117206317, guid: 082009ddc17db4147b1c73bdd1ba730b,
+        type: 3}
+      propertyPath: m_Name
+      value: floor_simple
+      objectReference: {fileID: 0}
     - target: {fileID: 3152760018117206322, guid: 082009ddc17db4147b1c73bdd1ba730b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1380,11 +1386,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3152760018117206317, guid: 082009ddc17db4147b1c73bdd1ba730b,
-        type: 3}
-      propertyPath: m_Name
-      value: floor_simple
       objectReference: {fileID: 0}
     - target: {fileID: 6848175769848879969, guid: 082009ddc17db4147b1c73bdd1ba730b,
         type: 3}
