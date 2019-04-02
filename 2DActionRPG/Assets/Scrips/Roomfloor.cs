@@ -17,7 +17,8 @@ public class Roomfloor: MonoBehaviour {
             firstenter = true;
             foreach (var spawn in enemeyspawns)
             {
-                enemies.Add(Instantiate(enemyPrefab, spawn.transform));
+                var enemy = Instantiate(enemyPrefab, spawn.transform)
+                enemies.Add(enemy);
             }
         }
     }
