@@ -401,6 +401,11 @@ PrefabInstance:
       propertyPath: runSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1424613734977562542, guid: 8fda200a33892f2418de1175ae6bb6be,
+        type: 3}
+      propertyPath: maxHp
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1424613734977562537, guid: 8fda200a33892f2418de1175ae6bb6be,
         type: 3}
       propertyPath: m_Mass
