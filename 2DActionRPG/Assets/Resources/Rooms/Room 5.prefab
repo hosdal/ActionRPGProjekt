@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 5714455762685751712}
   - component: {fileID: 6401724398397742630}
   - component: {fileID: 7796569786849171688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 672218984368523544}
   - component: {fileID: 4818165101864796464}
   - component: {fileID: 5563624440258273732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Innerwall (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 1123404533181449597}
   - component: {fileID: 3957476440331969414}
   - component: {fileID: 7981678171671760202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Innerwall (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -889,7 +889,7 @@ GameObject:
   - component: {fileID: 388076185725395388}
   - component: {fileID: 216887586400281886}
   - component: {fileID: 3626888562027529481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1074,7 +1074,7 @@ GameObject:
   - component: {fileID: 3406357376221085832}
   - component: {fileID: 5450798137057635982}
   - component: {fileID: 1413051984628679896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1180,7 +1180,7 @@ GameObject:
   - component: {fileID: 1945300261161388890}
   - component: {fileID: 2305340923200736681}
   - component: {fileID: 2256883401517609684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Innerwall (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1286,7 +1286,7 @@ GameObject:
   - component: {fileID: 4679849666536652265}
   - component: {fileID: 6755687358048404109}
   - component: {fileID: 3990969712830184511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1790,7 +1790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3315152737836644556}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Innerwalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1962,7 +1962,7 @@ GameObject:
   - component: {fileID: 8435465814097801343}
   - component: {fileID: 3428452135079225870}
   - component: {fileID: 3128762663068075978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Innerwall (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
