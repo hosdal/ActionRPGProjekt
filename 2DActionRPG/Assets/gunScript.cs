@@ -37,6 +37,7 @@ public class gunScript : MonoBehaviour
             //add force to bullet
             Vector2 forceToAdd = gunDirection * bulletSpeed;
             bulletInstance.AddForce(forceToAdd, ForceMode2D.Force);
+
         }
         animator.SetBool("gunShot", false);
     }
