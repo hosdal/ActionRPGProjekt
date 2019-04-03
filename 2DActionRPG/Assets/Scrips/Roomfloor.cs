@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Roomfloor: MonoBehaviour {
+public class Roomfloor : MonoBehaviour {
     private bool firstenter = false;
     public Rigidbody2D enemyPrefab;
     public List<GameObject> enemeyspawns;
@@ -38,6 +38,57 @@ public class Roomfloor: MonoBehaviour {
             foreach (var d in script.doors)
             {
                 d.SetActive(false);
+            }
+            if (script.left_room != null)
+            {
+                var gameobject = (GameObject)script.left_room;
+                var newscript = gameobject.GetComponent<Room>();
+                foreach (var d in newscript.doors)
+                {
+                    if (d.transform.position.x == gameobject.transform.position.x + 6.46f)
+                    {
+                        d.SetActive(false);
+                    }
+                }
+
+            }
+            if (script.right_room != null)
+            {
+                var gameobject = (GameObject)script.right_room;
+                var newscript = gameobject.GetComponent<Room>();
+                foreach (var d in newscript.doors)
+                {
+                    if (d.transform.position.x == gameobject.transform.position.x - 6.46f)
+                    {
+                        d.SetActive(false);
+                    }
+                }
+            }
+            if (script.up_room != null)
+            {
+                var gameobject = (GameObject)script.up_room;
+                var newscript = gameobject.GetComponent<Room>();
+                foreach (var d in newscript.doors)
+                {
+                    if (d.transform.position.y == gameobject.transform.position.y - 4.67f)
+                    {
+                        d.SetActive(false);
+                    }
+                }
+
+            }
+            if (script.down_room != null)
+            {
+                var gameobject = (GameObject)script.down_room;
+                var newscript = gameobject.GetComponent<Room>();
+                foreach (var d in newscript.doors)
+                {
+                    if (d.transform.position.y == gameobject.transform.position.y + 4.67f)
+                    {
+                        d.SetActive(false);
+                    }
+                }
+
             }
         }
     }
