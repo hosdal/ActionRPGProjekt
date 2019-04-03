@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
    {
@@ -10,10 +11,15 @@ public class PlayerScript : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb2D;
 
+    [SerializeField]
+    private int maxHp;
+    private int currentHp;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        currentHp = maxHp;
     }
    
 
@@ -41,5 +47,14 @@ public class PlayerScript : MonoBehaviour
 
     }
 
+    public void addDamage(int damage)
+    {
+        currentHp -= damage;
+        if(currentHp == 0)
+        {
+            //gameOver
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
 
 }

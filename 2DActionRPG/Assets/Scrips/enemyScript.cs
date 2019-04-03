@@ -13,6 +13,7 @@ public class enemyScript : MonoBehaviour, IDamageable {
     private float speed;
 
     private PlayerScript player;
+    private Animator animator;
 
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class enemyScript : MonoBehaviour, IDamageable {
     {
         player = FindObjectOfType<PlayerScript>();
         currentHp = maxHp;
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -27,6 +29,7 @@ public class enemyScript : MonoBehaviour, IDamageable {
 
         if (room.isIn)
         {
+            animator.SetFloat("Speed", speed);
             transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(player.transform.position.x, player.transform.position.y), speed * Time.deltaTime);
 
             Vector3 diff = (player.transform.position - transform.position);
@@ -36,10 +39,15 @@ public class enemyScript : MonoBehaviour, IDamageable {
             float angle = Mathf.Atan2(diff.y, diff.x);
             transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg);
 
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.transform.position - transform.position), speed * Time.deltaTime);
+        }
+    }
 
-            //transform.position += transform.forward * speed * Time.deltaTime;
-
+    private void OnCollisionEnter2D(Collision2D collision)  
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            player.addDamage(1);
+            animator.SetTrigger("Attack");
         }
     }
 
