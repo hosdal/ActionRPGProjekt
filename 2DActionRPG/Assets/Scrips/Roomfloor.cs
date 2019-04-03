@@ -45,7 +45,7 @@ public class Roomfloor : MonoBehaviour {
                 var newscript = gameobject.GetComponent<Room>();
                 foreach (var d in newscript.doors)
                 {
-                    if (d.transform.position.x == gameobject.transform.position.x + 6.46f)
+                    if (d.transform.position.x > gameobject.transform.position.x)
                     {
                         d.SetActive(false);
                     }
@@ -58,7 +58,7 @@ public class Roomfloor : MonoBehaviour {
                 var newscript = gameobject.GetComponent<Room>();
                 foreach (var d in newscript.doors)
                 {
-                    if (d.transform.position.x == gameobject.transform.position.x - 6.46f)
+                    if (d.transform.position.x < gameobject.transform.position.x)
                     {
                         d.SetActive(false);
                     }
@@ -70,7 +70,7 @@ public class Roomfloor : MonoBehaviour {
                 var newscript = gameobject.GetComponent<Room>();
                 foreach (var d in newscript.doors)
                 {
-                    if (d.transform.position.y == gameobject.transform.position.y - 4.67f)
+                    if (d.transform.position.y < gameobject.transform.position.y)
                     {
                         d.SetActive(false);
                     }
@@ -83,7 +83,7 @@ public class Roomfloor : MonoBehaviour {
                 var newscript = gameobject.GetComponent<Room>();
                 foreach (var d in newscript.doors)
                 {
-                    if (d.transform.position.y == gameobject.transform.position.y + 4.67f)
+                    if (d.transform.position.y > gameobject.transform.position.y)
                     {
                         d.SetActive(false);
                     }
