@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Roomfloor : MonoBehaviour {
+public class Roomfloor : MonoBehaviour
+{
     private bool firstenter = false;
     public Rigidbody2D enemyPrefab;
     public List<GameObject> enemeyspawns;
@@ -13,7 +14,6 @@ public class Roomfloor : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player" && !firstenter)
         {
-            isIn = true;
             firstenter = true;
             foreach (var spawn in enemeyspawns)
             {
@@ -22,6 +22,7 @@ public class Roomfloor : MonoBehaviour {
                 enemies.Add(enemy);
             }
         }
+        isIn = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -32,12 +33,20 @@ public class Roomfloor : MonoBehaviour {
 
     private void Update()
     {
-        if (enemies.Count == 0 && firstenter)
+        if (enemies.Count == 0 && firstenter && isIn)
         {
             Room script = GetComponentInParent<Room>();
             foreach (var d in script.doors)
             {
-                d.SetActive(false);
+                if ((d.transform.localPosition.x < 0f && script.left_room != null) || (d.transform.localPosition.x > 0f && script.right_room != null) || (d.transform.localPosition.y > 0f && script.up_room != null) || (d.transform.localPosition.y < 0f && script.down_room != null))
+                {
+                    Debug.Log(d.transform.position);
+                    Debug.Log(script.left_room);
+                    Debug.Log(script.right_room);
+                    Debug.Log(script.up_room);
+                    Debug.Log(script.down_room);
+                    d.SetActive(false);
+                }
             }
             if (script.left_room != null)
             {
@@ -46,9 +55,7 @@ public class Roomfloor : MonoBehaviour {
                 foreach (var d in newscript.doors)
                 {
                     if (d.transform.position.x > gameobject.transform.position.x)
-                    {
                         d.SetActive(false);
-                    }
                 }
 
             }
@@ -59,9 +66,7 @@ public class Roomfloor : MonoBehaviour {
                 foreach (var d in newscript.doors)
                 {
                     if (d.transform.position.x < gameobject.transform.position.x)
-                    {
                         d.SetActive(false);
-                    }
                 }
             }
             if (script.up_room != null)
@@ -71,9 +76,7 @@ public class Roomfloor : MonoBehaviour {
                 foreach (var d in newscript.doors)
                 {
                     if (d.transform.position.y < gameobject.transform.position.y)
-                    {
                         d.SetActive(false);
-                    }
                 }
 
             }
@@ -84,9 +87,7 @@ public class Roomfloor : MonoBehaviour {
                 foreach (var d in newscript.doors)
                 {
                     if (d.transform.position.y > gameobject.transform.position.y)
-                    {
                         d.SetActive(false);
-                    }
                 }
 
             }
