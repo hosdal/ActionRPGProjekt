@@ -9,6 +9,7 @@ public class gunScript : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private float bulletSpeed = 20f;
+    private AudioSource audio;
     
 
     private PlayerScript player;
@@ -18,6 +19,7 @@ public class gunScript : MonoBehaviour
     {
         player = GetComponent<PlayerScript>();
         animator = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class gunScript : MonoBehaviour
         //Bullet action
         if(Input.GetButtonDown("Fire1"))
         {
+            audio.Play();
             animator.SetTrigger("Gunshot");
             Vector2 gunDirection = bulletEntry.TransformDirection(Vector2.right);
 

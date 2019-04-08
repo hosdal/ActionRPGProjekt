@@ -9,6 +9,7 @@ public class Roomfloor : MonoBehaviour
     public List<GameObject> enemeyspawns;
     public List<Rigidbody2D> enemies = new List<Rigidbody2D>();
     public bool isIn = false;
+    private bool cleared = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -33,18 +34,13 @@ public class Roomfloor : MonoBehaviour
 
     private void Update()
     {
-        if (enemies.Count == 0 && firstenter && isIn)
+        if (enemies.Count == 0 && firstenter && isIn && !cleared)
         {
             Room script = GetComponentInParent<Room>();
             foreach (var d in script.doors)
             {
                 if ((d.transform.localPosition.x < 0f && script.left_room != null) || (d.transform.localPosition.x > 0f && script.right_room != null) || (d.transform.localPosition.y > 0f && script.up_room != null) || (d.transform.localPosition.y < 0f && script.down_room != null))
                 {
-                    Debug.Log(d.transform.position);
-                    Debug.Log(script.left_room);
-                    Debug.Log(script.right_room);
-                    Debug.Log(script.up_room);
-                    Debug.Log(script.down_room);
                     d.SetActive(false);
                 }
             }
@@ -91,6 +87,9 @@ public class Roomfloor : MonoBehaviour
                 }
 
             }
+            cleared = true;
+            Controller.roomscleared++;
+
         }
     }
 }

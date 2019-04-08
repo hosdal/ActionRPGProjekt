@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour {
     public GameObject rooms;
-    public int maxroom;
     private int counter = 0;
     private Object[] roomPrefabs;
     private List<Vector2> positions = new List<Vector2>();
-    Room[] roomslist;
+    private Room[] roomslist;
     void Awake()
     {
         positions.Add(new Vector2(0, 0));
-        while (counter < maxroom)
+        roomPrefabs = Resources.LoadAll("Rooms");
+        while (counter < Controller.roooms)
         {
-            roomPrefabs = Resources.LoadAll("Rooms");
             roomslist = rooms.GetComponentsInChildren<Room>();
             GameObject room = roomslist[Random.Range(0, roomslist.Length)].gameObject;
             Room script = room.GetComponentInChildren<Room>();
@@ -115,8 +114,9 @@ public class MapGenerator : MonoBehaviour {
                         break;
                 }
             }
-
         }
+
+        roomslist = rooms.GetComponentsInChildren<Room>();
 
         foreach (var g in roomslist)
         {
@@ -126,6 +126,7 @@ public class MapGenerator : MonoBehaviour {
             }
         }
     }
+
 
     private bool isPosInArray(Vector2 val, List<Vector2> arr)
     {
