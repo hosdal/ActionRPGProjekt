@@ -32,7 +32,6 @@ public class PlayerScript : MonoBehaviour
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        //"Move" should be under follow cursor, or else it won't work  
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Move(horizontal,vertical);
@@ -53,6 +52,7 @@ public class PlayerScript : MonoBehaviour
         if(currentHp == 0)
         {
             //gameOver
+            Controller.roomscleared = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }

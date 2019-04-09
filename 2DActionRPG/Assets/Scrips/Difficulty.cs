@@ -7,7 +7,7 @@ public class Difficulty : MonoBehaviour
 {
     public void easy()
     {
-        Controller.roooms = 10;
+        Controller.roooms = 5;
         SceneManager.LoadScene("Maps");
     }
 

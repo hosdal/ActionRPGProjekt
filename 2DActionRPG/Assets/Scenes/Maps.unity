@@ -1205,8 +1205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rooms: {fileID: 1459164368}
-  finalroom: {fileID: 2170670973089482027, guid: 95f826759a69f714aba30981f89b3bf2,
-    type: 3}
 --- !u!114 &879103043
 MonoBehaviour:
   m_ObjectHideFlags: 0
